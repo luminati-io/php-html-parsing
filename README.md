@@ -88,7 +88,7 @@ php index.php
 
 ## HTML Retrieval in PHP
 
-Before parsing HTML in PHP, you need some HTML to parse. In this section, we will see two different approaches to accessing HTML content in PHP.
+Before parsing HTML in PHP, you need some HTML to parse. In this section, we will see two different approaches to accessing HTML content in PHP. We suggest to read our [guide on web scraping with PHP](https://brightdata.com/blog/how-tos/web-scraping-php) too.
 
 ### With CURL
 
@@ -137,7 +137,7 @@ Add the above code snippet to `index.php` and launch it. It will produce the f
 
 Let's assume you have a file named `index.html` that contains the HTML of the “Hockey Teams” page from [Scrape This Site](https://www.scrapethissite.com/pages/forms/?per_page=100), which was previously retrieved using cURL:
 
-![The index.html file in the project folder](https://brightdata.com/wp-content/uploads/2025/02/The-index.html-file-in-the-project-folder-1024x608.png)
+![The index.html file in the project folder](https://github.com/luminati-io/php-html-parsing/blob/main/Images/The-index.html-file-in-the-project-folder-2048x1216.png)
 
 ## HTML Parsing in PHP: 3 Approaches
 
@@ -149,7 +149,7 @@ This section explains using three different libraries to parse HTML in PHP:
 
 In all three cases, you parse the HTML from the local `index.html` file to select all hockey team entries on the page and extract data from them:
 
-![The table on the target page](https://brightdata.com/wp-content/uploads/2025/02/The-table-on-the-target-page-1024x553.png)
+![The table on the target page](https://github.com/luminati-io/php-html-parsing/blob/main/Images/The-table-on-the-target-page-2048x1107.png)
 
 The final result will be a list of scraped hockey team entries containing the following details:
 
@@ -164,7 +164,7 @@ The final result will be a list of scraped hockey team entries containing the fo
 
 You can extract them from the HTML table with this structure:
 
-![The HTML DOM structure of the table's rows](https://brightdata.com/wp-content/uploads/2025/02/The-HTML-DOM-structure-of-the-tables-rows-1024x567.png)
+![The HTML DOM structure of the table's rows](https://github.com/luminati-io/php-html-parsing/blob/main/Images/The-HTML-DOM-structure-of-the-tables-rows-2048x1134.png)
 
 Each column in a table row has a specific class, allowing you to extract data by selecting elements with their class as a CSS selector and retrieving their content through their text.
 
